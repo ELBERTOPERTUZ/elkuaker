@@ -24,7 +24,7 @@ void calcular() {
     print(" 4: DIVIDIR");
     int kkk = int.parse(stdin.readLineSync()!);
 
-double suma( double num_1, double num_2 ){
+    double suma( double num_1, double num_2 ){
       return num_1 + num_2;
     }
 
