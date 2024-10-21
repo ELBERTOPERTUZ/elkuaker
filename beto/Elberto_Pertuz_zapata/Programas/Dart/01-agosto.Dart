@@ -17,7 +17,7 @@ void calcular() {
     print("ingrese segundo numero");
     double num_2 = double.parse(stdin.readLineSync()!);
 
-    print("QUE DESEA REALIZAR");
+    print("QUE OPERACION DESEA REALIZAR");
     print(" 1: SUMAR");
     print(" 2: RESTAR");
     print(" 3: MULTIPLICAR");
