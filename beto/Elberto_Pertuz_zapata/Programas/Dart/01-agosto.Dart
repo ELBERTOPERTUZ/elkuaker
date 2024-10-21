@@ -43,11 +43,11 @@ void calcular() {
 
     if(kkk == 1){
       resultado = suma( num_1, num_2 );
-    }else if( kkk == 2) {
+    }else if ( kkk == 2) {
       resultado = resta( num_1, num_2 );
-    }else if( kkk == 3) {
+    }else if ( kkk == 3) {
       resultado = multiplicar( num_1, num_2 );
-    }else if( kkk == 4) {
+    }else if ( kkk == 4) {
       resultado = dividir( num_1, num_2 );
     }else{
       print("error");
