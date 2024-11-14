@@ -5,6 +5,8 @@ void main(){
   runApp(Home());
 }
 class Home extends StatelessWidget{
+  const Home({super.key});
+
 
   Future<Posts> fetchData() async {
     final ur1 = Uri.parse('https://jsonplaceholder.typicode.com/posts/1');
@@ -18,9 +20,12 @@ class Home extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return const MaterialApp(
-    home: Scaffold(
-
-    ),
+    home: FutureBuilder<Posts>(
+      future: fetchData(), 
+      builder: (
+      )
+      
+    
    );
   }
 

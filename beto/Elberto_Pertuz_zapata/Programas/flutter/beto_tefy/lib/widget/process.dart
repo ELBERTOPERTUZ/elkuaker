@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(Process());
+  runApp(const Process());
 }
 class Process extends StatelessWidget{
   const Process({super.key});

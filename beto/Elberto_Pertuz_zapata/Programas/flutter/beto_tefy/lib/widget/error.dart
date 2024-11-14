@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(Error());
+  runApp(const Error());
 }
 class Error extends StatelessWidget{
   const Error({super.key});
