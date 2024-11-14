@@ -8,9 +8,9 @@ class Posts {
   
   Posts(String jsonString){
     Map<String, dynamic> mapa = jsonDecode(jsonString);
-    this.user_id = mapa['user id'];
-    this.id = mapa['id'];
-    this.tittle = mapa['tittle'];
-    this.body = mapa['body']; 
+    user_id = mapa['user id'];
+    id = mapa['id'];
+    tittle = mapa['tittle'];
+    body = mapa['body']; 
   }
 }

@@ -1,15 +1,13 @@
 import 'package:beto_tefy/models/posts.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 void main(){
   runApp(Home());
 }
 class Home extends StatelessWidget{
-  final int id;
-
-  const Home({super.key, required this.id})
 
   Future<Posts> fetchData() async {
-    final ur1 = Uri.parse('https://jsonplaceholder.typicode.com/posts/$id');
+    final ur1 = Uri.parse('https://jsonplaceholder.typicode.com/posts/1');
     final response = await http.get(ur1);
     if (response.statusCode == 200) {
       return Posts(response.body);
@@ -19,11 +17,11 @@ class Home extends StatelessWidget{
   }
   @override
   Widget build(BuildContext context) {
-   return MaterialApp(
+   return const MaterialApp(
     home: Scaffold(
 
     ),
-   )
+   );
   }
 
 }
