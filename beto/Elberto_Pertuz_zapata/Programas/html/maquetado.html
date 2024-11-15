@@ -13,26 +13,53 @@
         }
         header {
             border: 1px solid blue;
+            height: 100px;
         }
         nav {
             border: 1px solid blue;
             height: 50px;
         }
+        aside {
+            border: 1px solid orange;
+            height: 340px;
+            width: 300px;
+            float: left;
+        }
         section {
+            border: 1px solid blue;
+            height: 340px;
+        }
+        .articulos{
             border: 1px solid orange;
         }
+        article {
+            border: 1px solid red;
+            height: 170px;
+            width:  500px;
+            float: right;
+            display: inline;
+         }
+        footer{
+            border: 1px solid rgb(68, 0, 255);
+            height: 180px;
+            width:  1200px;
+            
+        }
+        
     </style>
-    <title>Betozin</title>
+        <title>Betozin</title>
 </head>
 <body>
     <main>
           <header></header>
           <nav></nav>
-          <section>
-            <aside></aside>
-            <article></article>
-            <article></article>
-          </section> 
+          <section>  
+          <aside></aside>
+            <section class="articulos">
+                <article></article>
+                <article></article>
+            </section>
+           </section>
           <footer></footer>
     </main>
 </body>
