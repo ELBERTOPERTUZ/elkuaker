@@ -28,14 +28,15 @@ class Home extends StatelessWidget{
       builder: (BuildContext context,
       AsyncSnapshot<Posts> snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Process();
+          return const Process();
         }else if (snapshot.hasError) {
-          return Error();
+          return const Error();
         }else {
           Posts p = snapshot.data!;
           return Comienzo(posts: p,);
         }
       },
+      )
     );
   }
 }
