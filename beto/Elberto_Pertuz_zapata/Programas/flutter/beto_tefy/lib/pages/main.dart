@@ -5,7 +5,7 @@ import 'package:beto_tefy/widget/error.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 void main(){
-  runApp(Home());
+  runApp(const Home());
 }
 class Home extends StatelessWidget{
   const Home({super.key});
