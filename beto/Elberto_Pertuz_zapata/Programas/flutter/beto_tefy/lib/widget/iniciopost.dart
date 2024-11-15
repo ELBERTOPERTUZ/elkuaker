@@ -1,8 +1,8 @@
 import 'package:beto_tefy/models/posts.dart';
 import 'package:flutter/material.dart';
-class Inicio extends StatelessWidget{
+class Comienzo extends StatelessWidget{
   final Posts posts;
-  Inicio({super.key,required this.posts})
+  Comienzo({super.key,required this.posts})
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -1,8 +1,11 @@
 import 'package:beto_tefy/models/posts.dart';
+import 'package:beto_tefy/widget/iniciopost.dart';
+import 'package:beto_tefy/widget/process.dart';
+import 'package:beto_tefy/widget/error.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 void main(){
-  runApp(Home());
+  runApp(const Home());
 }
 class Home extends StatelessWidget{
   const Home({super.key});
@@ -19,14 +22,22 @@ class Home extends StatelessWidget{
   }
   @override
   Widget build(BuildContext context) {
-   return const MaterialApp(
-    home: FutureBuilder<Posts>(
+    return Scaffold(
+      body: FutureBuilder<Posts>(
       future: fetchData(), 
-      builder: (
-      )
-      
-    
-   );
+      builder: (BuildContext context,
+      AsyncSnapshot<Posts> snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return Process();
+        }else if (snapshot.hasError) {
+          return Error();
+        }else {
+          Posts p = snapshot.data!;
+          return Comienzo(posts: p,);
+        }
+      },
+    );
   }
-
 }
+   
+     
