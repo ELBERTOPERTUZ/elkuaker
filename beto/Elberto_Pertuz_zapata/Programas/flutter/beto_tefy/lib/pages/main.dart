@@ -5,11 +5,10 @@ import 'package:beto_tefy/widget/error.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 void main(){
-  runApp(const Home());
+  runApp(Home());
 }
 class Home extends StatelessWidget{
   const Home({super.key});
-
 
   Future<Posts> fetchData() async {
     final ur1 = Uri.parse('https://jsonplaceholder.typicode.com/posts/1');
@@ -26,16 +25,16 @@ class Home extends StatelessWidget{
       body: FutureBuilder<Posts>(
       future: fetchData(), 
       builder: (BuildContext context,
-      AsyncSnapshot<Posts> snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Process();
-        }else if (snapshot.hasError) {
-          return const Error();
-        }else {
-          Posts p = snapshot.data!;
-          return Comienzo(posts: p,);
-        }
-      },
+        AsyncSnapshot<Posts> snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Process();
+          }else if (snapshot.hasError) {
+            return const Error();
+          }else {
+            Posts p = snapshot.data!;
+            return Comienzo(posts: p,);
+          }
+        },
       )
     );
   }
