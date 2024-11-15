@@ -15,6 +15,6 @@ class Comienzo extends StatelessWidget{
           ],
           ),
       ),
-    )
+    );
   }
 }
