@@ -40,7 +40,7 @@ nav {
     float: left;
     display: inline;
     background-color: #fffa99;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
     font-size: 20px;
 }
 article {
