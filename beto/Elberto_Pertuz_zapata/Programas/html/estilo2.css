@@ -1,0 +1,14 @@
+table {
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    background-color: rgb(194, 184, 6);
+    width: 500px;
+}
+td {
+    border: 3px solid rgb(152, 244, 133);
+    border-radius: 10px;
+    padding: 15px;
+}
+td:hover {
+    border: 3px solid rgb(0, 0, 0)
+}
