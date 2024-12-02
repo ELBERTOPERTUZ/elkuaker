@@ -21,3 +21,12 @@ class Tienda{
     }
 
 }
+
+
+
+class Carro{
+    String nombre;
+    void beto(String name){
+        this.nombre = name;  
+    }
+}
