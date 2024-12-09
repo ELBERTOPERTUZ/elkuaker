@@ -1,3 +1,4 @@
+import "dart:io";
 class Calculadora{
   double? num1;
   double? num2;
@@ -8,6 +9,11 @@ class Calculadora{
     this.num2 = var2;
     this.operacion = operacion;
   }
+
+  print('ingrese un numero');
+  double num1 = double.parse(stdin.readLineSync()!);
+  print('ingrese un numero');
+  double num2 = double.parse(stdin.readLineSync()!);
 
   double Sumar(){
     return num1! + num2!;
