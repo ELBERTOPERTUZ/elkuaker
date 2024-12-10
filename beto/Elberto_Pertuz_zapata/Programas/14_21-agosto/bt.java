@@ -8,12 +8,13 @@ class Beto{
 }
 
 class Tienda{
+    
     private String name;
 
-    void setName(String n){
-        this.name = n;
+    public void setName(String name) {
+        this.name = name;
     }
-    String getName(){
-        return this.name;
+    public String getName() {
+        return name;
     }
 }
