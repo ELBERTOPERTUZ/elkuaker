@@ -1,0 +1,18 @@
+body{
+    background-color: aqua;
+}
+
+
+@media (max-width: 720px){
+    body{
+        background-color: antiquewhite;
+    }
+    #id1{
+        background-color: red;
+        display: none;
+    }
+    #id2{
+        background-color: black;
+        display: none;
+    }
+}
