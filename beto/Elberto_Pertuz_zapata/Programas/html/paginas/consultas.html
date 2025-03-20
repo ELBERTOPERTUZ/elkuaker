@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+    <main>
+        <header>
+            <img class="imageh1" src="../Image/pngwing2.com.png" alt="" height="130px">
+            <img class="imageh2" src="../Image/pngwing.com.png" alt="" height="120px">
+            <p class="textheader1">centro veterinario</p>
+            <strong class="textheader2">caninos y felinos</strong>
+        </header>
+        <nav>
+          <a href="../maquetado2.html"></a>
+            <p class="Textnav1">.Servicios.</p>
+            <p class="Textnav2">.Productos.</p>
+            <p class="Textnav3">.Guarderia.</p>
+            <p class="Textnav4">.Promociones.</p>
+            <a href="../maquetado2.html">iniciooo</a>
+        </nav>
+        <section>
+            <section class="section1">
+
+                <h1>dato a consultar</h1>
+                
+                <section class="formulario">
+        <form action="../metodos/busqueda.php" method="post">
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Busqueda</label>
+            <select class="form-select" id="inputGroupSelect01" name="opcion" id="opcion">
+              <option selected>Escoge...</option>
+              <option value="Codigo">Codigo</option>
+              <option value="Mascota">Mascota</option>
+              <option value="Edad">Edad</option>
+              <option value="Raza">Raza</option>
+              <option value="Fecha">Fecha</option>
+              <option value="Hora">Hora</option>
+              <option value="Amo">Amo</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Que desea consultar?" aria-label="consultar" aria-describedby="basic-addon1" name="consulta" id="consulta">
+          </div>
+          <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Consultar</button>
+          <a class="nav-link active" id="consulta_all" aria-current="page" href="../metodos/busqueda_all.php">Consultar todos los registros</a>
+        </form>
+      </section>
+                
+            </section>
+        </section>
+        <footer>
+            <h3>contáctenos</h3>
+            <h3>línea gratuita 01 8000-00001</h3>
+            <h3>Correo: preguntas@caninosyfelinos.com</h3>
+        </footer>
+    </main>
+</body>
+</html>
