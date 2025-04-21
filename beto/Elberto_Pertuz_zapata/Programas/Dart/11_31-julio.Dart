@@ -35,6 +35,6 @@ class Calculadora {
 }
 
 void main(){
-  Calculadora calculo = new Calculadora(10, 2, "8");
+  Calculadora calculo = new Calculadora(10, 2, "M");
   calculo.Calcular();
 }
